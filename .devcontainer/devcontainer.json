@@ -11,14 +11,8 @@
     "vscode": {
       "extensions": [
         "Anthropic.claude-code"
-      ],
-      "settings": {
-        "claudeCode.allowDangerouslySkipPermissions": true
-      }
+      ]
     }
-  },
-  "containerEnv": {
-    "IS_SANDBOX": "1"
   },
   "mounts": [
     "source=claude-code-config-${devcontainerId},target=/home/vscode/.claude,type=volume",
